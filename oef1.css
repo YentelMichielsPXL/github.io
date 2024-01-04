@@ -238,6 +238,10 @@ article figure{
         .lijn1 article{
             width: 100%;
         }
+        .lijn1 figure{
+            display: flex;
+            justify-content: center;
+        }
 
     }
 
