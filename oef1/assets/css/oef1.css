@@ -1,0 +1,245 @@
+/*naam: Yentel Michiels  */
+
+/*
+    blauw   0090e3
+    oranje  orange
+    geel    f0d10a
+    wit     white
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 120px;
+    width: 100%;
+    font-family: monospace;
+    font-size: 20px;
+    float: left;
+    position: sticky;
+    top: 0;
+
+}
+
+nav h1 {
+    font-size: 28px;
+    display: inline;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+
+
+}
+
+nav h1 span {
+    background-color: #0090e3;
+    border: white solid 1px;
+    border-radius: 10px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    position: absolute;
+    right: 40px;
+    top: 35px;
+
+
+
+}
+
+nav li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+
+
+}
+nav li a {
+    color: white;
+}
+
+
+
+nav li a img {
+    border: white solid 1px;
+    background-color: #0090e3;
+    border-radius: 2px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+
+
+
+}
+
+main {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    color: black;
+    font-size: 16pt;
+    font-family: Serif sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.lijn1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lijn1 h2 {
+    color: #0090e3;
+}
+
+.lijn1 article {
+    /*flex: 1;*/
+    text-align: left;
+    margin-bottom: 30px;
+    width: 25%;
+}
+
+.lijn1 img {
+    width: 220px;
+    height: auto;
+
+}
+.recent{
+    width: 100%;
+}
+
+h2 {
+    color: #0090e3;
+}
+
+.lijn2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.lijn2 article {
+    flex: 1;
+}
+
+
+.lijn2 figure {
+    position: relative;
+    padding: 2px;
+    border: orange dotted 2px;
+    border-radius: 7px;
+}
+
+.lijn2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.heart {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border-radius: 100%;
+    width: 18%;
+    height: auto;
+}
+article figure{
+    margin: 10px;
+}
+.shoppingcart{
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .banner {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        height: auto;
+        flex-direction: column;
+    }
+    nav h1{
+        margin: 10px 0;
+        position: static;
+        left: auto;
+
+    }
+    nav ul {
+        float: none;
+        position: static;
+        right: auto;
+        top: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carticon{
+        display: none;
+    }
+    nav li:hover{
+        background-color: #f0d10a;
+    }
+    .lijn1{
+        max-width: 100%;
+
+    }
+    .lijn1 article{
+        width: 50%;
+    }
+    .shoppingcart{
+        display: inline;
+    }
+    .lijn2, .recent{
+        display: none;
+    }
+
+    @media screen and (max-width: 600px){
+        .lijn1 article{
+            width: 100%;
+        }
+
+    }
+
+
+}
