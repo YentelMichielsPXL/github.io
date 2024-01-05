@@ -1,0 +1,76 @@
+/* naam:
+*/
+
+/* 
+kleuren:
+    oranje: orange
+    wit:    white
+    blauw:  0090e3
+*/
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    font-size: 18pt;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+main div{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.flex-item{
+
+    border: orange 2px solid;
+
+}
+.flex-item h4{
+    margin-top: 0;
+}
+.flex-item p{
+    margin-top: 0;
+
+}
+.flex-item:nth-child(4){
+    flex-wrap: wrap;
+}
+
+
+
+.radio-button{
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio-button img{
+    max-height: 35px;
+    width: auto;
+
+}
+.flex-item{
+    margin: 0;
+}
+input{
+    font-size: 18pt;
+}
+.flex-item:nth-child(6) input{
+    background-color: #0090e3;
+    width: 100%;
+    height: 100px;
+    color: white;
+    margin: 15px;
+}
+
+
+
+
+
